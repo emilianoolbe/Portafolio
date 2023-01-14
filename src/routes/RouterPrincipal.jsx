@@ -28,7 +28,6 @@ export const RouterPrincipal = () => {
         </Routes>
       </div>
     {/* FOOTER */}
-
         <Footer />
 
     </BrowserRouter>
