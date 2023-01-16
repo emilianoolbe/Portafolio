@@ -7,7 +7,6 @@ export const Inicio = () => {
       <h1>
         Bienvenido, mi nombre es Emiliano Olivera y soy desarrollador web fullstack. Te ayudo a crear un sitio web a la medida de tus necesidades y así poder catapulzarte en internet. <Link to='/contacto'>Contáctame</Link>  
       </h1>
-
       <section className='ultimos-trabajos'>
         <h2>Algunos de mis proyectos</h2>
           <div className='trabajos'>

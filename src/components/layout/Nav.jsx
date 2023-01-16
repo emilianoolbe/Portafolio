@@ -6,7 +6,7 @@ export const Nav = () => {
     <nav className='nav'>
         <ul>
             <li>
-              <NavLink to='/'  className={({isActive}) => isActive ? 'seleccionado' : ''}>Inicio</NavLink>
+              <NavLink to='/'  className={({isActive}) => isActive ? 'seleccionado' : ''} >Inicio</NavLink>
             </li>
             <li>
               <NavLink to='/servicios' className={({isActive}) => isActive ? 'seleccionado' : ''}>Servicios</NavLink>
