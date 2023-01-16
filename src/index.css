@@ -12,15 +12,14 @@ code {
 }
 
 .layout {
-  background: rgb(94, 92, 92);
+  background: rgb(23, 23, 23);
   width: 97%;
   height: 100vh;
   margin: 0 auto;
   padding: 10px;
   display: grid;
   grid-template-areas: 'header nav nav nav'
-                        
-                        'contenido contenido contenido contenido'
+                        'contenido contenido contenido contenido'     
                         'footer footer footer footer';
   grid-template-rows: 150px auto 90px;
 }
@@ -33,7 +32,9 @@ code {
   align-items: center;
 }
 .header h2 {
+
   color: rgb(42, 192, 172);
+  text-shadow: 4px 5px 15px rgb(244, 209, 80);
   font-family: monospace;
   white-space: nowrap;
   border-right: 3px solid;
@@ -50,11 +51,11 @@ code {
 @keyframes blink {
    50% {border-color: transparent}
 }
-
 .header h1{
   font-size: 50px;
   color: white;
   transition: all 300ms;
+  text-shadow: 4px 5px 15px rgb(244, 209, 80);
 }
 
 /* NAV */
@@ -84,20 +85,26 @@ code {
  .nav a:hover{
   transform: scale(1.2, 1.2);
   color: rgb(106, 106, 253);
+  text-shadow: 4px 5px 15px rgb(106, 106, 253);
   transition: all 300ms
  }
  .nav .seleccionado,
  .nav a:before{
   transform: scale(1.2, 1.2);
   color: rgb(244, 209, 80);
+  text-shadow: 4px 5px 15px rgb(244, 209, 80);
  }
 
 /* CONTENIDO */
 .contenido{
   grid-area: contenido;
+  width: 100%;
+  border-top: 3px solid #f5f5f5;
   display: flex;
   justify-content: center;
+  text-shadow: 4px 5px 15px rgb(106, 106, 253);
 }
+
 
 .inicio{
   width: 100%;
@@ -121,7 +128,12 @@ code {
   transition: all 300ms;
 }
 .inicio a:hover{
-  color: rgb(42, 192, 172);
+  color:   rgb(244, 209, 80);
+  text-shadow: 4px 5px 15px  rgb(244, 209, 80);
+  
+}
+.inicio h2{
+ border-bottom: 3px solid  rgb(244, 209, 80);;
 }
 
 .servicios{
@@ -213,15 +225,15 @@ code {
   width: 100%;
   display: flex;
   justify-content: center;
-  animation: animacion 2s 1;
+  animation: animacionNav 3s ease;
 }
 .contacto h2{
   text-align: center;
 }
 .contacto form{
+  animation: animacion 2s 1;
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
 }
 .contacto form input[type='text'], input[type='email'], textarea{
   margin: 10px;
@@ -232,7 +244,7 @@ code {
   max-width: 500px;
   min-width: 450px;
   border-radius: 10px;
-  border: transparent;
+  box-shadow: 0px 0px 10px  rgb(42, 192, 172);
   color: rgb(42, 192, 172);
   font-weight: bold;
 }
@@ -251,13 +263,16 @@ code {
 
 .contacto input[type='submit']:hover{
   background-color: rgb(244, 209, 80);
+  box-shadow: 0px 0px 20px  rgb(244, 209, 80);
   transform: scale(1.1 , 1.1);
 }
 /* FOOTER */
 .footer{
   grid-area: footer;
-  color: rgb(122, 119, 119);
-  background-color: #f5f5f5;
+  color: white;
+  background-color: rgb(23, 23, 23);
+  border-top: 3px solid #f5f5f5;
+  text-shadow: 0px 0px 10px rgb(42, 192, 172);
   width: 100%;
   text-align: center;
   display: flex;

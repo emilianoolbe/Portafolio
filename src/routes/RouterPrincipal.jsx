@@ -15,7 +15,7 @@ export const RouterPrincipal = () => {
     {/* HEADER Y NAV */}
         <Header />
         <Nav />     
-
+    
     {/* CONTENIDO PRINCIPAL */}
       <section className='contenido'>
         <Routes>
