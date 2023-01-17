@@ -7,6 +7,7 @@ import {Contacto}  from "../components/Contacto";
 import { Header } from '../components/layout/Header';
 import { Nav } from '../components/layout/Nav';
 import { Footer } from '../components/layout/Footer';
+import { Error404 } from '../components/Error404';
 
 export const RouterPrincipal = () => {
   return (
@@ -23,6 +24,7 @@ export const RouterPrincipal = () => {
             <Route path='/portafolio'  element={<Portafolio /> } ></Route>
             <Route path='/servicios'  element={<Servicios /> } ></Route>
             <Route path='/contacto'  element={<Contacto /> } ></Route>
+            <Route path='*'  element={<Error404 /> } ></Route>
         </Routes>
       </section>
     {/* FOOTER */}
