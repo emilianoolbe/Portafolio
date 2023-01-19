@@ -215,8 +215,9 @@ code {
 }
 
 .portafolio{
-  height: 65vh;
+  height: 100%;
   width: 100%;
+  animation: animacionNav 3s ease;
 }
 
 .contacto{
