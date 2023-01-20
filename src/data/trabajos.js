@@ -8,7 +8,7 @@ export const trabajos = [
     },
     {
         'id':'rentATruck.uy',
-        'nombre': 'Rent A Trucl',
+        'nombre': 'Rent A Truck',
         'url': 'rentATruck.uy',
         'tecnologias': 'Front-End: CSS, EJS, Bootstrap, JS. Back-End: Node JS, Express, MySQL, Sequelize',
         'Categoria' : 'Desarrollo Web'
@@ -17,7 +17,7 @@ export const trabajos = [
         'id':'dashboardRenAtruck',
         'nombre': 'Rent A Truck - dashboard',
         'url': 'rentATruck.dashboard.uy',
-        'tecnologias': 'React JS, JS, CSS, JSX',
+        'tecnologias': 'React JS, JS, CSS, JSX - Backend API REST con NODE JS + Express',
         'Categoria' : 'Desarrollo de API REST'
     },
     {
