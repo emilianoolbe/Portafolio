@@ -22,7 +22,7 @@ export const Inicio = () => {
         <article>
             <img src="/images/SEQUELIZE.png" alt="Sequelize" />
             <img src="/images/SQ.png" alt="SQL" />
-            <img src="/images/postman.png" alt="postman" />
+            <img src="/images/POSTMAN.png" alt="postman" />
             <img src="/images/JWT.png" alt="jwt" />
         </article>
         <article>
