@@ -34,14 +34,14 @@ export const Inicio = () => {
 
         </article>
 
+
       </section>
+          <h2>Algunos de mis proyectos</h2>
+        
+        <section className='trabajo-inicio'>
 
-      <h2>Algunos de mis proyectos</h2>
-    
-    <section>
-
-        <ListadoTrabajos limite='2'/>
-    </section>
+            <ListadoTrabajos limite='2'/>
+        </section>
 
   
 

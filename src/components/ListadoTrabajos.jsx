@@ -5,7 +5,6 @@ import { trabajos } from '../data/trabajos'
 export const ListadoTrabajos = ({limite}) => {
   return (
     <div className='portafolio'>
-      <h1></h1>
       <section className='trabajos-section'>
         {
           trabajos.slice(0, limite).reverse().map((trabajo, i) => {

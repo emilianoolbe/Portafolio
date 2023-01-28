@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
     font-family: -apple-system, monospace, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,8 +16,8 @@ code {
 
 .layout {
   background: rgb(23, 23, 23);
-  width: 98%;
-  height: 100%;
+  width: 99%;
+  height: auto;
   margin: 0 auto;
   padding: 10px;
   display: grid;
@@ -23,7 +26,6 @@ code {
                         'footer footer footer footer';
   grid-template-rows: 140px auto 60px;
 }
-
 /* HEADER */
 .header{
   grid-area: header;
@@ -98,9 +100,11 @@ code {
 .contenido{
   grid-area: contenido;
   width: 100%;
-  border-top: 3px solid #f5f5f5;
+  height: 100%;
+  border-top: 1px solid #f5f5f5;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-shadow: 4px 5px 15px rgb(106, 106, 253);
 }
 
@@ -146,6 +150,7 @@ code {
 .inicio-Trabajos{
   display: flex;
   flex-wrap: wrap;
+  border: 3px solid red;
 
 }
 
@@ -180,10 +185,10 @@ code {
 }
 
 
-
 .servicios{
   color: white;
   width: 100%;
+  margin: 70px 0px 70px;
 }
 
 .servicios-section{
@@ -259,15 +264,14 @@ code {
 }
 
 
-
-
-
-
-
-
 .portafolio{
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
   animation: animacionNav 3s ease;
 }
 .portafolio h1{
@@ -320,8 +324,11 @@ code {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   animation: animacionNav 3s ease;
+  margin-top: 70px;
   margin-bottom: 62px;
+
 }
 .contacto h2{
   text-align: center;
@@ -329,7 +336,8 @@ code {
 .contacto form{
   animation: animacion 2s 1;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column; 
+
 }
 .contacto form input[type='text'], input[type='email'], textarea{
   margin: 13px;
@@ -370,10 +378,6 @@ code {
 }
 
 
-
-
-
-
 /* FOOTER */
 .footer{
   grid-area: footer;
@@ -393,10 +397,8 @@ code {
   margin-left: 10px;
   border-radius: 10px;
   border: #f5f5f5 solid 1px;
-  width: 40%;
+  width: 30%;
 }
-
-
 
 
 .error404{
@@ -439,27 +441,105 @@ code {
 }
 
 /* QUERYS */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .layout {
    
     grid-template-areas: 'header header header header'
                           'nav nav nav nav'
                           'contenido contenido contenido contenido'
                           'footer footer footer footer';
-    grid-template-rows: 10vh 20vh auto 5vh;
+    grid-template-rows: 3% 5% auto 6%;
+    width:100%;
     height: 100%;
-    min-height: 100%;
   }
+
+  /* CONTENIDO  */
+  .contenido{
+    width: 100%;
+    height: 85%;
+    border: none;
+  }
+
+  /* HEADER */
+  .header{
+    margin-top: 60px;
+  }
+  .header h2 {
+
+  color: rgb(42, 192, 172);
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 3px solid;
+  font-weight: lighter;
+  font-size: 20px;
+  width: 16ch;
+
+  animation: typing 3s steps(16) infinite alternate, blink 5s step-start alternate;
+  overflow:hidden;
+}
+
+  /* NAV */
+
   .nav ul{
+    width: 90%;
     justify-content: center;
+
   }
+
+  /* CONTACTO */
   .contacto form input[type='text'], input[type='email'], textarea{
     max-width: 70%;
-    min-width: 70vw;
+    min-width: 90%;
   }
   .contacto{
     margin-bottom: 20px;
     margin-right: 20px;
   }
   
+
+
+  /* PORTAFOLIO */
+  
+  .portafolio{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px 25px -60px;
+    animation: animacionNav 3s ease;
+  }
+  .portafolio-trabajo img{
+    width: 285%;
+    border-radius: 6px;
+    border: transparent;
+    transition: all 500ms;
+  }
+  .portafolio-trabajo img:hover{
+    width: 255%;
+    margin-right: 30%;
+  }
+
+  /* FOOTER */
+  .footer{
+    border-top: 1px solid #f5f5f5;
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer img {
+    margin: 0px -70px 0px 65px;
+    width: 50%;
+  }
+
+
+  /* INICIO */ 
+  .inicio{
+    height: fit-content;
+    margin: 120px 0px -60px 0px;
+  }
+  .trabajo-inicio{
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
