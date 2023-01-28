@@ -449,7 +449,7 @@ code {
                           'contenido contenido contenido contenido'
                           'footer footer footer footer';
     grid-template-rows: 3% 5% auto 6%;
-    width:100%;
+    width:fit-content;
     height: 100%;
   }
 
@@ -481,7 +481,7 @@ code {
   /* NAV */
 
   .nav ul{
-    width: 90%;
+    width:78%;
     justify-content: center;
 
   }
